@@ -34,7 +34,7 @@ with a1:
     
     options_1 = st.multiselect(
     '语言能力(可多选）',
-    ['中文', '英语', '法语', '俄语', '西班牙语', '阿拉伯语'],
+    ['中文', '英语', '法语', '俄语', '日语', '阿拉伯语'],
     ['中文'],
     max_selections=6)
 
@@ -68,6 +68,7 @@ with a2:
     st.write("图片:", uploaded_file)
     if uploaded_file is not None:
         st.image(uploaded_file, width=150, caption="图片")
+        
     c1, c2, c3= st.columns([1,1,1])
     with c1:
         st.write("职位:", aa)
@@ -82,11 +83,17 @@ with a2:
         st.write("工作经验:", numbers)
         
     with c3:
-        st.write("语言能力:", options_1)
+       
         s=''
         for i in options_1:
-            s =s + i
-        st.write("技能:", zz)
+            s =s + i +","
+
+        st.write("语言能力:", s)
+        
+        v=''
+        for r in zz:
+            v =v + r +","
+        st.write("技能:", v)
         st.write("期望薪资:", values)
     st.write("个人简历:", init_text)  
   
