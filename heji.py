@@ -83,7 +83,7 @@ elif page == "专业数据分析":
     def get_dataframe_from_csv():
         
     # 读取指定路径的CSV文件
-        df = pd.read_csv('D:\\cdx_env\\student_data_adjusted_rounded.csv')
+        df = pd.read_csv('student_data_adjusted_rounded.csv')
         return df
 
 # 读取数据
@@ -228,7 +228,7 @@ else:
 
     def get_dataframe_from_csv():
     # 读取指定路径的CSV文件
-        df = pd.read_csv('D:\\cdx_env\\student_data_adjusted_rounded.csv')
+        df = pd.read_csv('student_data_adjusted_rounded.csv')
         return df
 
 # 读取数据
